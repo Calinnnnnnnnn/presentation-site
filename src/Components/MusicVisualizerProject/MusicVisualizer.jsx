@@ -93,7 +93,7 @@ function MusicVisualizer() {
             {sliderImages.map((img, i) => (
               <div key={i}>
                 <img
-                  src={`/images/Proiect_AM/${img}`}
+                  src={`${process.env.PUBLIC_URL}/images/Proiect_AM/${img}`}
                   alt={`Vizualizare ${i + 1}`}
                 />
               </div>

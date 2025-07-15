@@ -76,16 +76,16 @@ function Pergola() {
         <div className={`${styles.carousel} ${styles.animateRight}`}>
           <Slider key={sliderKey} ref={sliderRef} {...settings}>
             <div>
-              <img src="/images/Proiect_PM/Pergola4.png" alt="Pergola 1" />
+              <img src={`${process.env.PUBLIC_URL}/images/Proiect_PM/Pergola4.png`} alt="Pergola 1" />
             </div>
             <div>
-              <img src="/images/Proiect_PM/Pergola2.jpeg" alt="Pergola 2" />
+              <img src={`${process.env.PUBLIC_URL}/images/Proiect_PM/Pergola2.jpeg`} alt="Pergola 2" />
             </div>
             <div>
-              <img src="/images/Proiect_PM/Pergola3.jpeg" alt="Pergola 3" />
+              <img src={`${process.env.PUBLIC_URL}/images/Proiect_PM/Pergola3.jpeg`} alt="Pergola 3" />
             </div>
             <div>
-              <img src="/images/Proiect_PM/Pergola5.jpg" alt="Pergola 4" />
+              <img src={`${process.env.PUBLIC_URL}/images/Proiect_PM/Pergola5.jpg`} alt="Pergola 4" />
             </div>
           </Slider>
         </div>

@@ -103,7 +103,7 @@ function RealEstate() {
               ].map((img, i) => (
                 <div key={i}>
                   <img
-                    src={`/images/Proiect_BD/${img}`}
+                    src={`${process.env.PUBLIC_URL}/images/Proiect_BD/${img}`}
                     alt={t("realEstate.sliderAlt", { index: i + 1 })}
                   />
                 </div>
