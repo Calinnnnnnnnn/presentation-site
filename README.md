@@ -29,12 +29,14 @@ It showcases my projects, professional experience, and contact information in a 
 
 ## 📂 Folder Structure Overview
 
+```bash
 src/
 ├── Components/ # Reusable UI components
 ├── pages/ # Main pages (Home, Projects, Contact)
 ├── translations/ # i18next translation files
 ├── App.js # Application routing
 └── index.js # App entry point
+```
 
 ## 🌐 Deployment
 
@@ -47,13 +49,10 @@ To build and deploy:
 ```bash
 npm run build
 npm run deploy
+```
 
 ## ⚠️ License
 
 All rights reserved.
 This project is protected by copyright.
 Reproduction, distribution or unauthorized use of any content (including source code, design, images and text) is strictly prohibited without explicit permission.
-
-
-
-```
