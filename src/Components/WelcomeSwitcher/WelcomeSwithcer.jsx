@@ -15,10 +15,10 @@ const messages = [
 ];
 
 const sliderImages = [
-  '/images/Proiect_BD/Intampinare.png',
-  '/images/Proiect_AM/ss_pagina_live_music_visualizer_1.png',
-  '/images/PowerBI/SS_Raport.png',
-  '/images/Proiect_BD/Lista.png',
+  `${process.env.PUBLIC_URL}/images/Proiect_BD/Intampinare.png`,
+  `${process.env.PUBLIC_URL}/images/Proiect_AM/ss_pagina_live_music_visualizer_1.png`,
+  `${process.env.PUBLIC_URL}/images/PowerBI/SS_Raport.png`,
+  `${process.env.PUBLIC_URL}/images/Proiect_BD/Lista.png`,
 ];
 
 function WelcomeSwitcher() {

@@ -27,17 +27,18 @@ function App() {
   if (loading) {
     return (
       <div className="loader">
-        <img
-          src="/images/Logo/Ilie Ioan-Calin_Logo.png"
-          alt="Logo"
-          className="loader-logo"
-        />
+      <img
+        src={`${process.env.PUBLIC_URL}/images/Logo/Ilie Ioan-Calin_Logo.png`}
+        alt="Logo"
+        className="loader-logo"
+      />
+
       </div>
     );
   }
 
   return (
-    <Router>
+    <Router basename="/presentation-site">
       <ScrollToTop />
       <Navbar />
       <main>
