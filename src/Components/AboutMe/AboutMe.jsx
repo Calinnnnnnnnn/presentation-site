@@ -20,7 +20,7 @@ function AboutMe() {
       >
         <div className={styles.imageBlock}>
           <img
-            src="/images/Peep/peep-sitting-12.png"
+            src={`${process.env.PUBLIC_URL}/images/Peep/peep-sitting-12.png`}
             alt="Person illustration"
             className={styles.peep}
           />

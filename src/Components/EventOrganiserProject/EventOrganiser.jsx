@@ -73,7 +73,7 @@ function EventOrganiser() {
               "AWJ4.png",
             ].map((img, i) => (
               <div key={i}>
-                <img src={`/images/Proiect_AWJ/${img}`} alt={`Capture ${i + 1}`} />
+                <img src={`${process.env.PUBLIC_URL}/images/Proiect_AWJ/${img}`} alt={`Capture ${i + 1}`} />
               </div>
             ))}
           </Slider>

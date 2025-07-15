@@ -54,7 +54,7 @@ function Navbar() {
       {/* Logo (centru) */}
       <div className={styles.logo}>
         <img
-          src="/images/Logo/Ilie Ioan-Calin_Logo.png"
+          src={`${process.env.PUBLIC_URL}/images/Logo/Ilie Ioan-Calin_Logo.png`}
           alt="Logo Călin Ilie"
         />
       </div>
