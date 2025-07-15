@@ -1,0 +1,221 @@
+{
+  "welcome": {
+    "innovation": "Un spațiu dedicat inovației și creativității",
+    "description": "Descoperă proiecte moderne, soluții inteligente și idei care aduc tehnologia mai aproape de oameni. Fiecare pagină te poartă mai aproape de viziunea unui viitor digital clar și captivant.",
+    "explore": "Explorează"
+  },
+  
+  "home": {
+    "greeting": "Salut! Eu sunt Călin",
+    "description": "Ești curios să afli mai multe despre mine, proiectele mele și pasiunea mea pentru tehnologie? Descoperă mai multe despre mine și hai să discutăm!",
+    "contact": "Contactează-mă",
+    "about": "Despre mine"
+  },
+
+  "about": {
+    "title": "Cine sunt?",
+    "intro1": "Mă numesc <b>Ilie Ioan-Călin</b>, student în anul IV la Universitatea Politehnica din București, în cadrul <b>Facultății de Automatică și Calculatoare</b>, specializarea Ingineria Sistemelor. Am o pasiune profundă pentru dezvoltarea de aplicații software și soluții integrate.",
+    "intro2": "De-a lungul timpului am dezvoltat multiple proiecte, printre care: o platformă de Real Estate în React și Node.js, un organizator de evenimente cu Java Spring Boot, cât şi o pergolă retractabilă automatizată.",
+    "intro3": "Pun accent pe seriozitate, atenție la detalii, lucrul în echipă și rezolvarea creativă a problemelor. Obiectivul meu este să contribui cu proiecte inovatoare care aduc valoare reală în domeniul tehnologiei.",
+    "experienceTitle": "Experiență",
+    "experiencePosition": "Data Analyst - SunWavePharma",
+    "experiencePeriod": "Stagiu de practică - 3 luni",
+    "experienceDescription": "În calitate de Data Analyst intern, am participat la digitalizarea proceselor operaționale, automatizarea fluxurilor de documente și integrarea datelor în sisteme centralizate de raportare. Am utilizat MySQL pentru extragerea și gestionarea datelor și Power BI pentru dezvoltarea de dashboard-uri interactive și rapoarte care au susținut deciziile de management.",
+    "projectsTitle": "Proiecte",
+    "projectsDescription": "În timpul studiilor și proiectelor personale am acumulat experiență în dezvoltarea de aplicații web utilizând <b>React</b>, <b>Node.js</b> și <b>Java Spring Boot</b>, precum și în realizarea de soluții embedded și integrarea acestora în sisteme complexe. De asemenea, am coordonat o echipă şi am contribuit la crearea unui joc educațional de tip Jeopardy în Unreal Engine 5, acesta reprezentând un proiect al Uniunii Europene.",
+    "viewProjects": "Vezi proiectele mele"
+    },
+
+    "projects": {
+        "title": "Proiectele mele",
+        "description": "Aici vei găsi o selecție din proiectele mele realizate de-a lungul timpului.",
+        "moreButton": "Mai multe",
+
+        "realEstate": {
+            "title": "Platformă Real Estate",
+            "subtitle": "Aplicație web full-stack în React și Node.js.",
+            "text": "Platformă pentru gestionarea anunțurilor imobiliare, cu autentificare utilizatori, panou de administrare, filtrare avansată a ofertelor, utilizând baze de date MySQL."
+        },
+        "musicVisualizer": {
+            "title": "Music Visualizer",
+            "subtitle": "Aplicație web interactivă de vizualizare audio.",
+            "text": "Aplicație web creată cu React și Web Audio API pentru vizualizarea în timp real a frecvențelor audio, cu suport fișiere audio și microfon."
+        },
+        "pergola": {
+            "title": "Pergolă Automatizată",
+            "subtitle": "Soluție embedded cu control inteligent.",
+            "text": "Control inteligent prin microcontroller, senzori de temperatură și ploaie, motoare DC pentru deschiderea şi închidere automată."
+        },
+        "jeopardy": {
+            "title": "Jeopardy Game",
+            "subtitle": "Joc educațional Unreal Engine 5.",
+            "text": "Joc interactiv dezvoltat în Unreal Engine 5, conceput pentru sesiuni de formare, prezentări educaționale și concursuri în stil Jeopardy."
+        },
+        "eventOrganiser": {
+            "title": "Organizator Evenimente",
+            "subtitle": "Platformă Java Spring Boot.",
+            "text": "Gestionare a evenimentelor, participanților și locațiilor, cu funcționalități de notificare automată prin e-mail, export de rapoarte și panou de administrare intuitiv."
+        }
+    },
+
+    "realEstate": {
+        "title": "Real Estate Platform - Homyz",
+        "description": "Homyz este o platformă completă care permite gestionarea eficientă a anunțurilor imobiliare, facilitând publicarea, organizarea și promovarea proprietăților într-un mod intuitiv și accesibil pentru utilizatori.",
+        "featuresTitle": "Funcționalități principale",
+        "features": [
+            "Autentificare și înregistrare utilizatori",
+            "Adăugare și administrare anunțuri imobiliare",
+            "Căutare și filtrare proprietăți",
+            "Gestionare categorii și imagini",
+            "Recenzii și programarea vizionarilor"
+        ],
+        "sliderAlt": "Captură {{index}}",
+        "techTitle": "Tehnologii utilizate",
+        "database": "Bază de date",
+        "auth": "Autentificare",
+        "dbTitle": "Bază de date - Tabele principale",
+        "dbDescription": "Baza de date a platformei stochează centralizat informațiile asigurând o organizare clară și relații bine definite între date. Tabelele sunt:",
+        "dbTables": [
+            { "title": "Utilizatori", "desc": "informații conturi și roluri (Client/Admin)" },
+            { "title": "Anunțuri", "desc": "detalii anunțuri imobiliare" },
+            { "title": "Proprietăți", "desc": "caracteristici proprietăți" },
+            { "title": "Categorii", "desc": "clasificare anunțuri" },
+            { "title": "Imagini", "desc": "galeria foto" },
+            { "title": "Recenzii", "desc": "feedback utilizatori" },
+            { "title": "Vizionări", "desc": "programări vizionări" }
+        ],
+        "flowTitle": "Fluxul aplicației",
+        "flowText": "Utilizatorii interacționează cu platforma printr-o interfață intuitivă, unde pot vizualiza, filtra și publica anunțuri imobiliare. Acțiunile lor generează cereri HTTP către serverul aplicației, care procesează logica de business, validează datele și gestionează autentificarea. Serverul trimite apoi interogări către baza de date pentru a prelua sau actualiza informațiile necesare, iar răspunsurile sunt convertite în date structurate pe care interfața le afișează în timp real, oferind o experiență fluidă și rapidă.",
+        "backButton": "Înapoi la proiecte"
+    },
+
+    "music": {
+        "intro": "Music Visualizer este o aplicație web interactivă care permite redarea fișierelor audio sau a sunetului live de la microfon, generând vizualizări dinamice în timp real și conținut multimedia creat automat cu ajutorul AI.",
+        "audioTitle": "Vizualizare Audio Live",
+        "audio1": "Captură semnal audio din fișiere sau microfon",
+        "audio2": "Redare în timp real cu animații sincronizate",
+        "audio3": "Diverse stiluri vizuale selectabile",
+        "audio4": "Compatibilitate cu majoritatea formatelor audio",
+        "aiTitle": "Generare Videoclip AI",
+        "ai1": "Integrare cu Replicate API",
+        "ai2": "Analiza melodiei și generare automată de videoclip",
+        "ai3": "Export video sincronizat cu muzica selectată",
+        "ai4": "Personalizare prompt vizual",
+        "trapTitle": "Trap Visualizer",
+        "trap1": "Mod vizual inspirat de Trap Nation",
+        "trap2": "Cerc pulsant sincronizat cu muzica",
+        "trap3": "Fundaluri animate și efecte speciale",
+        "trap4": "Personalizare stil vizual și culori",
+        "techTitle": "Tehnologii utilizate",
+        "tech1": "Frontend: React, Tailwind CSS, Web Audio API",
+        "tech2": "Backend: Node.js, Express",
+        "tech3": "AI: Replicate API - WaveSpeed, LLaVA",
+        "tech4": "Vizualizare: Canvas 2D, animații custom",
+        "flowTitle": "Fluxul aplicației",
+        "flow": "Utilizatorul încarcă un fișier audio sau activează microfonul, aplicația procesează semnalul în timp real și generează vizualizări sincronizate. Opțional, se pot crea videoclipuri AI pe baza caracteristicilor melodiei, care sunt ulterior descărcate sau vizualizate direct în platformă."
+    },
+
+    "common": {
+        "backToProjects": "Înapoi la proiecte"
+    },
+
+    "pergola": {
+        "title": "Pergolă Automată",
+        "intro": "Proiect care integrează senzori de mediu și control automat al pergolei prin microcontroller, oferind un sistem inteligent de protecție împotriva intemperiilor.",
+        "featuresTitle": "Funcționalități principale",
+        "feature1": "Deschidere/închidere automată în funcție de condițiile de mediu",
+        "feature2": "Afișarea temperaturii și umidității pe LCD I2C",
+        "feature3": "Control manual prin buton dedicat",
+        "feature4": "LED-uri de stare (deschis, închis, eroare)",
+        "feature5": "Senzor de ploaie cu prag reglabil",
+        "techTitle": "Tehnologii și componente utilizate",
+        "tech1": "Microcontroller: ATmega328P (Arduino UNO)",
+        "tech2": "Senzori: DHT11, senzor de ploaie",
+        "tech3": "Driver motor: L298N",
+        "tech4": "Actuator: Motor DC",
+        "tech5": "Afișaj: LCD I2C",
+        "tech6": "Control manual: Buton tactil",
+        "tech7": "LED-uri status, alimentare duală",
+        "flowTitle": "Fluxul de funcționare",
+        "flow": "La pornirea sistemului, LCD-ul afișează mesajul de inițializare, iar senzorii încep să colecteze date. Dacă plouă sau temperatura scade sub prag, motorul închide automat pergola. Utilizatorul poate comuta manual starea pergolei prin butonul tactil, indiferent de condiții. LED-urile indică în timp real starea curentă.",
+        "ocwButton": "Vezi pagina proiectului pe OCW"
+    },
+
+    "jeopardy": {
+        "title": "Jeopardy Game - SEO & Digital Marketing",
+        "intro": "Un joc educațional dezvoltat în Unreal Engine 5 care transformă procesul de învățare a conceptelor SEO și Digital Marketing într-o experiență interactivă și captivantă.",
+
+        "featuresTitle": "Funcționalități principale",
+        "feature1": "Mod single-player cu tablou clasic Jeopardy",
+        "feature2": "Categorii și întrebări pe diferite niveluri de dificultate",
+        "feature3": "Sistem de puncte și timer integrat",
+        "feature4": "Feedback instant asupra răspunsurilor",
+        "feature5": "Navigare intuitivă și coloană sonoră originală",
+        "feature6": "Easter egg ascuns în joc",
+
+        "techTitle": "Tehnologii utilizate",
+        "tech1": "Engine: Unreal Engine",
+        "tech2": "Limbaj: Blueprint scripting și C++",
+        "tech3": "Grafică: Unreal Engine UI Widgets",
+        "tech4": "Sunet: Soundtrack original",
+
+        "structureTitle": "Structură și OOP",
+        "structure1": "Clase principale: UUserWidget, UWidget, INamedSlotInterface",
+        "structure2": "Moștenire: UUserWidget extinde UWidget",
+        "structure3": "Abstracție: Interfețe și clase de bază",
+        "structure4": "Polimorfism: Metode virtuale suprascrise",
+        "structure5": "Encapsulare: Membri protejați și privați",
+
+        "flowTitle": "Fluxul de funcționare",
+        "flow": "Jucătorul accesează meniul principal și alege tabla de joc. Selectează o categorie și o întrebare, după care apare cronometru și interfața de răspuns. Sistemul verifică răspunsul în timp real, actualizează scorul, iar la final oferă feedback și statistici.",
+
+        "optTitle": "Optimizare și testare",
+        "opt": "Jocul a fost testat iterativ pentru stabilitate și performanță, optimizat grafic și logic pentru a reduce consumul de resurse, iar debuggingul a fost realizat colaborativ.",
+
+        "teamTitle": "Contribuția echipei",
+        "team1": "Ioan-Călin Ilie - manager de proiect + Home menu, funcționalitate butoane, debugging",
+        "team2": "Gherghișan Andrei-Vlad: Întrebări și categorii",
+        "team3": "David Florin-Leonard: Timer, scor",
+        "team4": "Iurea Andreea-Irina: Tabla de joc, reguli",
+        "team5": "Mărunțelu Gabriel-Sebastian: Soundtrack, Easter egg"
+    },
+
+    "event": {
+        "title": "Organizator Evenimente",
+        "intro": "Aplicație modernă pentru planificarea și gestionarea evenimentelor, cu funcționalități avansate de monitorizare și organizare.",
+        "featuresTitle": "Funcționalități principale",
+        "feature1": "Creare și personalizare evenimente",
+        "feature2": "Managementul invitaților și confirmărilor de participare",
+        "feature3": "Calendar integrat pentru vizualizare rapidă",
+        "feature4": "Dashboard intuitiv pentru organizatori",
+        "feature5": "Notificări automate către participanți",
+        "feature6": "Interfață responsive optimizată pentru toate dispozitivele",
+        "techTitle": "Tehnologii utilizate",
+        "tech1": "Frontend: HTML, CSS, JavaScript",
+        "tech2": "Backend: Node.js, Express",
+        "tech3": "Bază de date: MongoDB",
+        "structureTitle": "Structura aplicației",
+        "structure1": "Controller: EventController, UserController, NotificationController",
+        "structure2": "Service: EventService, UserService",
+        "structure3": "Repository: EventRepository, UserRepository",
+        "structure4": "Model: Event, User, Invitation",
+        "flowTitle": "Fluxul aplicației",
+        "flow": "Utilizatorii își creează cont și configurează evenimentele dorite, completând detaliile despre locație, participanți și opțiuni extra. Toate informațiile sunt stocate în baza de date și pot fi modificate oricând. Organizatorii pot trimite notificări automate și pot monitoriza statusul invitațiilor din dashboard-ul centralizat."
+    },
+
+    "contact": {
+        "title": "Contact",
+        "intro": "Hai să discutăm! Mi-ar plăcea să iau legătura cu tine.",
+        "name": "Nume",
+        "email": "Email",
+        "message": "Mesaj",
+        "send": "Trimite mesajul",
+        "thankYou": "Mulțumesc pentru mesaj! Te voi contacta în cel mai scurt timp.",
+        "invite": "Poți să îmi scrii direct utilizând acest formular sau mă poți găsi pe rețelele sociale de mai jos!",
+        "error": "A apărut o eroare. Te rog să încerci din nou."
+    }
+
+
+
+
+}

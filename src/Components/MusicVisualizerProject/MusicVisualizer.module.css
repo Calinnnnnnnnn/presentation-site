@@ -1,0 +1,208 @@
+.project {
+  background-color: black;
+  color: white;
+  padding: 4rem 2rem;
+  max-width: 1000px;
+  margin: 0 auto;
+  text-align: left;
+}
+
+/* Titlu principal */
+.project h1 {
+  font-size: 2.5rem;
+  margin-bottom: 1rem;
+  color: #4faa98;
+  text-align: center;
+}
+
+/* Subtitluri */
+.project h2 {
+  font-size: 1.8rem;
+  margin-top: 2rem;
+  color: #4faa98;
+}
+
+/* Paragrafe */
+.project p {
+  font-size: 1.1rem;
+  line-height: 1.6;
+  margin-bottom: 1rem;
+}
+
+/* Liste */
+.project ul {
+  list-style: disc;
+  padding-left: 1.5rem;
+}
+.project li {
+  margin-bottom: 0.5rem;
+}
+
+/* Intro text */
+.intro {
+  font-size: 1.2rem;
+  margin-bottom: 2rem;
+  text-align: center;
+}
+
+/* Buton Înapoi */
+.backButton {
+  display: inline-block;
+  margin-top: 2rem;
+  padding: 0.6rem 1.2rem;
+  background-color: #4faa98;
+  color: black;
+  border-radius: 20px;
+  font-weight: 600;
+  text-decoration: none;
+  font-size: 0.95rem;
+  transition: background 0.3s ease, transform 0.2s ease;
+}
+.backButton:hover {
+  background-color: #3aa187;
+  transform: translateY(-2px);
+}
+
+/* Containere secțiuni cu carusel/Lottie */
+.featuresCarousel,
+.dbLottie {
+  display: flex;
+  flex-wrap: wrap;
+  gap: 2rem;
+  margin: 2rem 0 1rem 0;
+  align-items: flex-start;
+}
+
+/* Text din stânga */
+.features,
+.db {
+  flex: 1 1 300px;
+  min-width: 250px;
+}
+
+/* Carusel imagini */
+.carousel {
+  flex: 1 1 500px;
+  min-width: 300px;
+  max-width: 600px;
+  margin-top: 1.5rem;
+  margin-bottom: 0;
+}
+.carousel img {
+  width: 100%;
+  height: 300px;
+  object-fit: cover;
+  object-position: center 20%;
+  border-radius: 10px;
+  box-shadow: 0 0 10px rgba(0,0,0,0.5);
+  transition: opacity 0.3s ease;
+}
+.carousel img[loading="lazy"] {
+  opacity: 0;
+  animation: fadeIn 0.5s ease-in-out forwards;
+}
+
+/* Fade-in pentru imagini */
+@keyframes fadeIn {
+  to {
+    opacity: 1;
+  }
+}
+
+/* Lottie container */
+.lottieWrapper {
+  flex: 1 1 300px;
+  min-width: 200px;
+  max-width: 400px;
+  display: flex;
+  justify-content: center;
+}
+.lottie {
+  width: 100%;
+  max-width: 300px;
+}
+
+/* Secțiune tehnologii */
+.tech {
+  margin: 2rem 0;
+  padding: 1.5rem;
+  background: rgba(79, 170, 152, 0.1);
+  border-radius: 10px;
+  border-left: 4px solid #4faa98;
+}
+
+/* Animatii la intrare */
+@keyframes slideInLeft {
+  from { opacity: 0; transform: translateX(-50px); }
+  to { opacity: 1; transform: translateX(0); }
+}
+@keyframes slideInRight {
+  from { opacity: 0; transform: translateX(50px); }
+  to { opacity: 1; transform: translateX(0); }
+}
+@keyframes slideInTop {
+  from { opacity: 0; transform: translateY(-50px); }
+  to { opacity: 1; transform: translateY(0); }
+}
+.animateLeft {
+  animation: slideInLeft 0.8s ease forwards;
+}
+.animateRight {
+  animation: slideInRight 0.8s ease forwards;
+}
+.animateTop {
+  animation: slideInTop 0.8s ease forwards;
+}
+
+/* ------------------------------ */
+/* Responsive - sub 1200px */
+@media (max-width: 1200px) {
+  .carousel { 
+    max-width: 550px; 
+    height: 290;
+    }
+  .lottieWrapper { max-width: 350px; }
+  .lottie { max-width: 350px; }
+  .project h1 { font-size: 2.3rem; }
+  .project h2 { font-size: 1.6rem; }
+}
+
+/* Sub 768px - tabletă și telefon */
+@media (max-width: 768px) {
+  .featuresCarousel,
+  .dbLottie {
+    flex-direction: column;
+    align-items: stretch;
+  }
+  .carousel,
+  .lottieWrapper {
+    max-width: 100%;
+    min-width: 0;
+    margin: 1rem auto 0 auto;
+  }
+  .carousel img {
+    height: auto;
+    min-height: 200px;
+    max-height: 300px;
+  }
+  .lottie { max-width: 100%; }
+  .features,
+  .db,
+  .tech { width: 100%; }
+  .project h1 { font-size: 2rem; }
+  .project h2 { font-size: 1.4rem; }
+  .project p,
+  .project li { font-size: 1rem; }
+}
+
+/* Sub 480px - telefon mic */
+@media (max-width: 480px) {
+  .carousel img { 
+    min-height: 180px;
+    max-height: 300px; 
+    }
+  .project h1 { font-size: 1.8rem; }
+  .project h2 { font-size: 1.3rem; }
+  .project p,
+  .project li { font-size: 0.95rem; }
+}

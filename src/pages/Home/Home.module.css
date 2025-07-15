@@ -1,0 +1,181 @@
+.home {
+  height: 100vh;
+  background-color: black;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  padding: 0 2rem;
+  color: white;
+}
+
+.content {
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  max-width: 1200px;
+  width: 100%;
+  gap: 3rem;
+  flex-wrap: wrap;
+}
+
+/* CARD */
+
+.card {
+  background-color: #1a1a1a;
+  color: white;
+  padding: 2rem;
+  border-radius: 20px;
+  box-shadow: 0 0 15px rgba(255, 255, 255, 0.15),
+              0 0 30px rgba(255, 255, 255, 0.1),
+              0 0 50px rgba(255, 255, 255, 0.05);
+  max-width: 400px;
+  text-align: center;
+
+  /* Initial state: hidden and shifted left */
+  opacity: 0;
+  transform: translateX(-80px);
+  transition: all 1s ease-out;
+}
+
+/* When in view */
+.cardVisible {
+  opacity: 1;
+  transform: translateX(0);
+}
+
+.card:hover {
+  transform: translateX(0) translateY(-5px);
+}
+
+/* ANIMATION BLOCK */
+
+.animationBlock {
+  flex: 1;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  min-width: 280px;
+
+  /* Initial state: hidden and shifted right */
+  opacity: 0;
+  transform: translateX(80px);
+  transition: all 1s ease-out;
+}
+
+/* When in view */
+.animationVisible {
+  opacity: 1;
+  transform: translateX(0);
+}
+
+/* TITLU + SUBTITLU + BUTTON */
+
+.title {
+  font-size: 3.5rem;
+  font-weight: 700;
+  margin-bottom: 1rem;
+}
+
+.subtitle {
+  font-size: 1.3rem;
+  margin-bottom: 2rem;
+}
+
+.ctaButton {
+  padding: 0.8rem 2rem;
+  background-color: white;
+  color: black;
+  border-radius: 25px;
+  text-decoration: none;
+  font-weight: bold;
+  transition: background 0.3s ease, box-shadow 0.3s ease;
+}
+
+.ctaButton:hover {
+  background-color: #ddd;
+  box-shadow: 0 0 5px 2px #4faa98, 0 0 20px 4px #4faa98;
+}
+
+
+
+.buttons {
+  display: flex;
+  gap: 1rem;
+  justify-content: center;
+  flex-wrap: wrap;
+  margin-top: 1rem;
+}
+
+.secondaryButton {
+  padding: 0.8rem 2rem;
+  background-color: transparent;
+  border: 2px solid #4faa98;
+  color: #4faa98;
+  border-radius: 25px;
+  text-decoration: none;
+  font-weight: bold;
+  transition: background 0.3s ease, color 0.3s ease;
+}
+
+.secondaryButton:hover {
+  background-color: #4faa98;
+  color: white;
+}
+
+/* Sub 992px (tablete) */
+@media (max-width: 992px) {
+  .home {
+    height: auto;
+    padding: 4rem 1.5rem;
+  }
+
+  .title {
+    font-size: 2.8rem;
+  }
+
+  .subtitle {
+    font-size: 1.1rem;
+  }
+
+  .animationBlock {
+    margin-top: 2rem;
+  }
+
+  .card {
+    max-width: 100%;
+  }
+}
+
+/* Sub 768px (mobil) */
+@media (max-width: 768px) {
+  .content {
+    flex-direction: column;
+    align-items: center;
+    gap: 2rem;
+  }
+
+  .title {
+    font-size: 2.3rem;
+    text-align: center;
+  }
+
+  .subtitle {
+    font-size: 1rem;
+    text-align: center;
+  }
+
+  .card {
+    padding: 1.5rem;
+  }
+
+  .animationBlock {
+    order: -1; /* animația deasupra cardului */
+  }
+
+  .ctaButton,
+  .secondaryButton {
+    width: 100%;
+    text-align: center;
+  }
+}
+

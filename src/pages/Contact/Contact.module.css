@@ -1,0 +1,184 @@
+.contact {
+  display: flex;
+  min-height: 100vh;
+  background-color: black;
+  color: #ffffff;
+  font-family: "Poppins", sans-serif;
+}
+
+.leftColumn {
+  flex: 1;
+  margin-left: 1rem;
+  padding: 2rem 2rem 4rem 2rem;
+  display: flex;
+  flex-direction: column;
+  justify-content: flex-start;
+  animation: slideRight 0.8s ease forwards;
+}
+
+.leftColumn h1 {
+  font-size: 2.5rem;
+  color: #4faa98;
+  margin-bottom: 0.5rem;
+}
+
+.leftColumn p {
+  font-size: 1.1rem;
+  margin-bottom: 2rem;
+  color: #cccccc;
+}
+
+.form {
+  display: flex;
+  flex-direction: column;
+  gap: 1rem;
+}
+
+.form input,
+.form textarea {
+  width: 95%;
+  background: transparent;
+  border: 1px solid #4faa98;
+  border-radius: 16px;
+  padding: 0.9rem;
+  color: #ffffff;
+  font-size: 1rem;
+  transition: border-color 0.3s ease;
+}
+
+.form input:focus,
+.form textarea:focus {
+  outline: none;
+  border-color: #3c907a;
+}
+
+.form textarea {
+  min-height: 150px;
+  resize: vertical;
+}
+
+.form button {
+  width: 100%;
+  background-color: #4faa98;
+  color: #0e0e0e;
+  border: none;
+  padding: 1rem;
+  border-radius: 16px;
+  font-weight: bold;
+  font-size: 1.1rem;
+  cursor: pointer;
+  transition: background-color 0.3s ease, box-shadow 0.3s ease;
+  box-shadow: 0 0 10px #4faa98, 0 0 20px #4faa98;
+}
+
+
+.form button:hover {
+  background-color: #3c907a;
+}
+
+.thankYou {
+  color: #4faa98;
+  font-size: 1.2rem;
+  margin-top: 1rem;
+}
+
+.rightColumn {
+  flex: 1;
+  background-color: black;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: flex-start;
+  padding: 2rem;
+  text-align: center;
+  animation: slideLeft 0.8s ease forwards;
+}
+
+.invite {
+  margin-top: 1rem;
+  font-size: 1.2rem;
+  color: #cccccc;
+  max-width: 300px;
+}
+
+.socials {
+  margin-top: 1rem;
+  display: flex;
+  gap: 1rem;
+  justify-content: center;
+}
+
+.socials a {
+  color: #4faa98;
+  font-size: 1.8rem;
+  transition: color 0.3s ease;
+}
+
+.socials a:hover {
+  color: #3c907a;
+}
+
+.thankYouWrapper {
+  animation: fadeIn 0.6s ease forwards;
+}
+
+@keyframes fadeIn {
+  from {
+    opacity: 0;
+    transform: translateY(20px);
+  }
+  to {
+    opacity: 1;
+    transform: translateY(0);
+  }
+}
+
+.thankYou {
+  color: #4faa98;
+  font-size: 1.4rem;
+  text-align: center;
+  margin-top: 2rem;
+}
+
+
+@keyframes slideRight {
+  0% {
+    opacity: 0;
+    transform: translateX(-50px);
+  }
+  100% {
+    opacity: 1;
+    transform: translateX(0);
+  }
+}
+
+@keyframes slideLeft {
+  0% {
+    opacity: 0;
+    transform: translateX(50px);
+  }
+  100% {
+    opacity: 1;
+    transform: translateX(0);
+  }
+}
+
+
+/* Responsivitate */
+@media (max-width: 900px) {
+  .contact {
+    flex-direction: column;
+  }
+
+  .rightColumn {
+    min-height: 200px;
+  }
+
+  .invite {
+    font-size: 1rem;
+  }
+
+  .socials a {
+    font-size: 1.5rem;
+  }
+}

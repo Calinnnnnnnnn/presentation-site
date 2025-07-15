@@ -1,0 +1,218 @@
+{
+  "welcome": {
+    "innovation": "A space dedicated to innovation and creativity",
+    "description": "Discover modern projects, smart solutions, and ideas that bring technology closer to people. Each page takes you one step closer to the vision of a clear and captivating digital future.",
+    "explore": "Explore"
+  },
+
+  "home": {
+    "greeting": "Hi! I'm Călin",
+    "description": "Are you curious to learn more about me, my projects, and my passion for technology? Discover more about me and let’s connect!",
+    "contact": "Contact me",
+    "about": "About me"
+  },
+
+  "about": {
+    "title": "Who am I?",
+    "intro1": "My name is <b>Ilie Ioan-Călin</b>, a 4th year student at the Politehnica University of Bucharest, <b>Faculty of Automation and Computers</b>, specializing in Systems Engineering. I have a deep passion for developing software applications and integrated solutions.",
+    "intro2": "Over time, I have developed multiple projects, including: a Real Estate platform in React and Node.js, an event organizer with Java Spring Boot, and an automated retractable pergola.",
+    "intro3": "I focus on seriousness, attention to detail, teamwork, and creative problem-solving. My goal is to contribute with innovative projects that bring real value to the field of technology.",
+    "experienceTitle": "Experience",
+    "experiencePosition": "Data Analyst - SunWavePharma",
+    "experiencePeriod": "Internship - 3 months",
+    "experienceDescription": "As a Data Analyst intern, I participated in the digitization of operational processes, document workflow automation, and data integration into centralized reporting systems. I used MySQL for data extraction and management and Power BI to develop interactive dashboards and reports that supported management decisions.",
+    "projectsTitle": "Projects",
+    "projectsDescription": "During my studies and personal projects, I gained experience developing web applications using React, Node.js, and Java Spring Boot, as well as creating embedded solutions and integrating them into complex systems. I also led a team and contributed to creating an educational Jeopardy-style game in Unreal Engine 5, as part of a European Union project.",
+    "viewProjects": "See my projects"
+  },
+
+  "projects": {
+      "title": "My Projects",
+      "description": "Here you will find a selection of my projects developed over time.",
+      "moreButton": "More",
+
+      "realEstate": {
+        "title": "Real Estate Platform",
+        "subtitle": "Full-stack web app in React and Node.js.",
+        "text": "Platform for managing real estate listings, with user authentication, admin panel, advanced offer filtering, using MySQL databases."
+      },
+      "musicVisualizer": {
+        "title": "Music Visualizer",
+        "subtitle": "Interactive web audio visualization app.",
+        "text": "Web app built with React and the Web Audio API for real-time visualization of audio frequencies, supporting audio files and microphone input."
+      },
+      "pergola": {
+        "title": "Automated Pergola",
+        "subtitle": "Embedded solution with smart control.",
+        "text": "Smart control via microcontroller, temperature and rain sensors, DC motors for automatic opening and closing."
+      },
+      "jeopardy": {
+        "title": "Jeopardy Game",
+        "subtitle": "Educational game in Unreal Engine 5.",
+        "text": "Interactive game developed in Unreal Engine 5, designed for training sessions, educational presentations, and Jeopardy-style competitions."
+      },
+      "eventOrganiser": {
+        "title": "Event Organizer",
+        "subtitle": "Java Spring Boot platform.",
+        "text": "Management of events, participants and locations, with automatic email notifications, report exports, and an intuitive admin panel."
+      }
+    },
+
+    "realEstate": {
+      "title": "Real Estate Platform - Homyz",
+      "description": "Homyz is a complete platform that enables efficient management of real estate listings, making it easy to publish, organize, and promote properties in an intuitive and accessible way.",
+      "featuresTitle": "Key Features",
+      "features": [
+        "User authentication and registration",
+        "Add and manage real estate listings",
+        "Search and filter properties",
+        "Manage categories and images",
+        "Reviews and viewing appointments"
+      ],
+      "sliderAlt": "Screenshot {{index}}",
+      "techTitle": "Technologies Used",
+      "database": "Database",
+      "auth": "Authentication",
+      "dbTitle": "Database - Main Tables",
+      "dbDescription": "The platform's database stores information centrally, ensuring clear organization and well-defined relationships between data. The tables are:",
+      "dbTables": [
+        { "title": "Users", "desc": "account information and roles (Client/Admin)" },
+        { "title": "Listings", "desc": "real estate listing details" },
+        { "title": "Properties", "desc": "property characteristics" },
+        { "title": "Categories", "desc": "listing classification" },
+        { "title": "Images", "desc": "photo gallery" },
+        { "title": "Reviews", "desc": "user feedback" },
+        { "title": "Viewings", "desc": "viewing appointments" }
+      ],
+      "flowTitle": "Application Flow",
+      "flowText": "Users interact with the platform through an intuitive interface where they can view, filter, and publish real estate listings. Their actions generate HTTP requests to the application server, which processes business logic, validates data, and manages authentication. The server then queries the database to retrieve or update the necessary information, and the responses are converted into structured data displayed in real-time by the interface, offering a smooth and fast experience.",
+      "backButton": "Back to projects"
+    },
+
+    "music": {
+      "intro": "Music Visualizer is an interactive web application that allows playback of audio files or live microphone input, generating dynamic real-time visualizations and AI-generated multimedia content.",
+      "audioTitle": "Live Audio Visualization",
+      "audio1": "Capture audio signal from files or microphone",
+      "audio2": "Real-time playback with synchronized animations",
+      "audio3": "Various selectable visual styles",
+      "audio4": "Compatibility with most audio formats",
+      "aiTitle": "AI Video Generation",
+      "ai1": "Integration with Replicate API",
+      "ai2": "Song analysis and automatic video generation",
+      "ai3": "Export video synchronized with selected music",
+      "ai4": "Customizable visual prompts",
+      "trapTitle": "Trap Visualizer",
+      "trap1": "Visual mode inspired by Trap Nation",
+      "trap2": "Pulsing circle synchronized with music",
+      "trap3": "Animated backgrounds and special effects",
+      "trap4": "Customizable visual style and colors",
+      "techTitle": "Technologies Used",
+      "tech1": "Frontend: React, Tailwind CSS, Web Audio API",
+      "tech2": "Backend: Node.js, Express",
+      "tech3": "AI: Replicate API - WaveSpeed, LLaVA",
+      "tech4": "Visualization: Canvas 2D, custom animations",
+      "flowTitle": "Application Flow",
+      "flow": "The user uploads an audio file or enables the microphone, the application processes the signal in real time and generates synchronized visualizations. Optionally, AI videos can be created based on the song's characteristics, which can then be downloaded or viewed directly on the platform."
+    },
+
+    "common": {
+      "backToProjects": "Back to projects"
+    },
+
+    "pergola": {
+      "title": "Automated Pergola",
+      "intro": "Project integrating environmental sensors and automatic pergola control via microcontroller, providing an intelligent protection system against weather conditions.",
+      "featuresTitle": "Main Features",
+      "feature1": "Automatic opening/closing based on environmental conditions",
+      "feature2": "Temperature and humidity display on I2C LCD",
+      "feature3": "Manual control via dedicated button",
+      "feature4": "Status LEDs (open, closed, error)",
+      "feature5": "Rain sensor with adjustable threshold",
+      "techTitle": "Technologies and Components Used",
+      "tech1": "Microcontroller: ATmega328P (Arduino UNO)",
+      "tech2": "Sensors: DHT11, rain sensor",
+      "tech3": "Motor driver: L298N",
+      "tech4": "Actuator: DC Motor",
+      "tech5": "Display: I2C LCD",
+      "tech6": "Manual control: Tactile button",
+      "tech7": "Status LEDs, dual power supply",
+      "flowTitle": "Operating Flow",
+      "flow": "When the system starts, the LCD displays the initialization message and the sensors begin collecting data. If it rains or the temperature drops below the threshold, the motor automatically closes the pergola. The user can manually switch the pergola's state via the tactile button, regardless of conditions. The LEDs indicate the current status in real time.",
+      "ocwButton": "View the project page on OCW"
+    },
+
+    "jeopardy": {
+      "title": "Jeopardy Game - SEO & Digital Marketing",
+      "intro": "An educational game developed in Unreal Engine 5 that transforms learning SEO and Digital Marketing concepts into an interactive and engaging experience.",
+
+      "featuresTitle": "Main Features",
+      "feature1": "Single-player mode with classic Jeopardy board",
+      "feature2": "Categories and questions at different difficulty levels",
+      "feature3": "Integrated points and timer system",
+      "feature4": "Instant feedback on answers",
+      "feature5": "Intuitive navigation and original soundtrack",
+      "feature6": "Hidden Easter egg",
+
+      "techTitle": "Technologies Used",
+      "tech1": "Engine: Unreal Engine",
+      "tech2": "Language: Blueprint scripting and C++",
+      "tech3": "Graphics: Unreal Engine UI Widgets",
+      "tech4": "Sound: Original soundtrack",
+
+      "structureTitle": "Structure and OOP",
+      "structure1": "Main classes: UUserWidget, UWidget, INamedSlotInterface",
+      "structure2": "Inheritance: UUserWidget extends UWidget",
+      "structure3": "Abstraction: Interfaces and base classes",
+      "structure4": "Polymorphism: Overridden virtual methods",
+      "structure5": "Encapsulation: Protected and private members",
+
+      "flowTitle": "Application Flow",
+      "flow": "The player accesses the main menu and selects the game board. They pick a category and a question, then the timer and answer interface appear. The system checks the answer in real time, updates the score, and finally provides feedback and statistics.",
+
+      "optTitle": "Optimization and Testing",
+      "opt": "The game was tested iteratively for stability and performance, graphically and logically optimized to reduce resource consumption, and debugging was carried out collaboratively.",
+
+      "teamTitle": "Team Contribution",
+      "team1": "Ioan-Călin Ilie - project manager + Home menu, button functionality, debugging",
+      "team2": "Gherghișan Andrei-Vlad: Questions and categories",
+      "team3": "David Florin-Leonard: Timer, score",
+      "team4": "Iurea Andreea-Irina: Game board, rules",
+      "team5": "Mărunțelu Gabriel-Sebastian: Soundtrack, Easter egg"
+    },
+
+    "event": {
+      "title": "Event Organiser",
+      "intro": "Modern application for planning and managing events, with advanced monitoring and organization features.",
+      "featuresTitle": "Key Features",
+      "feature1": "Create and customize events",
+      "feature2": "Manage guests and RSVPs",
+      "feature3": "Integrated calendar for quick overview",
+      "feature4": "Intuitive dashboard for organizers",
+      "feature5": "Automatic notifications to participants",
+      "feature6": "Responsive interface optimized for all devices",
+      "techTitle": "Technologies Used",
+      "tech1": "Frontend: HTML, CSS, JavaScript",
+      "tech2": "Backend: Node.js, Express",
+      "tech3": "Database: MongoDB",
+      "structureTitle": "Application Structure",
+      "structure1": "Controller: EventController, UserController, NotificationController",
+      "structure2": "Service: EventService, UserService",
+      "structure3": "Repository: EventRepository, UserRepository",
+      "structure4": "Model: Event, User, Invitation",
+      "flowTitle": "Application Flow",
+      "flow": "Users create accounts and configure desired events by filling in details about location, participants, and extra options. All information is stored in the database and can be edited at any time. Organizers can send automatic notifications and monitor invitation status from the centralized dashboard."
+    },
+
+    "contact": {
+      "title": "Contact",
+      "intro": "Let's get in touch! I would love to hear from you.",
+      "name": "Name",
+      "email": "Email",
+      "message": "Message",
+      "send": "Send message",
+      "thankYou": "Thank you for your message! I will get back to you shortly.",
+      "invite": "You can write me directly using this form or find me on the social networks below!",
+      "error": "An error occurred. Please try again."
+    }
+
+}

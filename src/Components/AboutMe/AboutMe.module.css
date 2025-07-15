@@ -1,0 +1,173 @@
+.aboutMe {
+  background-color: black;
+  color: white;
+  padding: 4rem 2rem;
+  display: flex;
+  flex-direction: column;
+  gap: 3rem;
+  align-items: center;
+}
+
+.row {
+  max-width: 1200px;
+  width: 100%;
+  display: flex;
+  flex-wrap: wrap;
+  gap: 3rem;
+  justify-content: center;
+  align-items: center;
+}
+
+/* Blocul cu imaginea Peep */
+.imageBlock {
+  flex: 1;
+  min-width: 250px;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+
+.peep {
+  width: 220px;
+  height: auto;
+}
+
+/* Blocul cu animația Lottie */
+.animationBlock {
+  flex: 1;
+  min-width: 250px;
+  display: flex;
+  flex-direction: column; /* Asta pune animatia deasupra si butonul dedesubt */
+  justify-content: center;
+  align-items: center;
+}
+
+
+.lottie {
+  width: 250px;
+  height: 250px;
+}
+
+/* Card comun */
+.card {
+  background-color: #1a1a1a;
+  border-radius: 20px;
+  padding: 2rem;
+  box-shadow: 0 0 15px rgba(255, 255, 255, 0.15),
+              0 0 30px rgba(255, 255, 255, 0.1),
+              0 0 50px rgba(255, 255, 255, 0.05);
+  max-width: 600px;
+  width: 100%;
+  text-align: center;
+  animation: slideInUp 1s ease-out forwards;
+  opacity: 0;
+  transform: translateY(30px);
+}
+
+.card h2 {
+  font-size: 2.2rem;
+  margin-bottom: 1.2rem;
+}
+
+.card p {
+  font-size: 1.1rem;
+  margin-bottom: 1rem;
+  line-height: 1.6;
+}
+
+
+.card b{
+  color: #4faa98;
+}
+@keyframes slideInUp {
+  to {
+    opacity: 1;
+    transform: translateY(0);
+  }
+}
+
+/* Responsiv: pe mobil fiecare rând devine coloană */
+@media (max-width: 768px) {
+  .row {
+    flex-direction: column;
+    gap: 2rem;
+    align-items: center;
+  }
+
+  .card {
+    max-width: 90%; /* era 600px */
+    width: 100%;
+    margin-left: -0.7rem;
+  }
+
+  .animationBlock {
+    justify-content: center;
+  }
+
+  .imageBlock {
+    justify-content: center;
+  }
+}
+
+
+.section h3 {
+  font-size: 1.4rem;
+  margin-bottom: 0.5rem;
+  color: #4faa98;
+}
+
+.section h4 {
+  font-size: 1rem;
+  margin-bottom: 0.5rem;
+  color: #4faa98;
+}
+
+.separator {
+  border: none;
+  border-top: 1px solid rgba(255,255,255,0.2);
+  margin: 1.5rem 0;
+}
+
+.projectsButton {
+  display: inline-flex;
+  align-items: center;
+  justify-content: center;
+  gap: 0.5rem;
+  margin-top: 2rem;
+  padding: 0.75rem 1.5rem;
+  background-color: #4faa98;
+  color: white;
+  border-radius: 25px;
+  text-decoration: none;
+  font-weight: 600;
+  font-size: 1rem;
+  transition: background 0.3s ease, transform 0.2s ease;
+  position: relative;
+  overflow: hidden;
+}
+
+
+.projectsButton:hover {
+  background-color: #3aa187;
+  transform: translateX(-5px);
+  box-shadow: 0 0 5px 2px #4faa98, 0 0 20px 4px #4faa98;
+}
+
+
+.projectsButton::after {
+  content: ">>";
+  opacity: 0;
+  transform: translateX(-10px);
+  transition: opacity 0.3s ease, transform 0.3s ease;
+  font-weight: bold;
+}
+
+.projectsButton:hover::after {
+  opacity: 1;
+  transform: translateX(0);
+}
+
+
+
+
+

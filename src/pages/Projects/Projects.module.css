@@ -1,0 +1,200 @@
+.projects {
+  background-color: black;
+  color: white;
+  padding: 4rem 2rem;
+  text-align: center;
+}
+
+.projects h1 {
+  font-size: 3rem;
+  margin-bottom: 1rem;
+  color: #4faa98;
+}
+
+.projects p {
+  font-size: 1.2rem;
+  margin-bottom: 3rem;
+}
+
+.grid {
+  display: grid;
+  grid-template-columns: repeat(auto-fit, minmax(250px, 1fr));
+  gap: 2rem;
+  max-width: 1200px;
+  margin: 0 auto;
+}
+
+.card {
+  background-color: #1a1a1a;
+  padding: 1.5rem;
+  border-radius: 15px;
+  box-shadow: 0 0 15px rgba(255,255,255,0.1);
+  transition: transform 0.3s ease, box-shadow 0.3s ease;
+}
+
+.card:hover {
+  transform: translateY(-5px);
+  box-shadow: 0 0 20px rgba(79, 170, 152, 0.4);
+}
+
+.card h2 {
+  font-size: 1.5rem;
+  margin-bottom: 0.8rem;
+  color: #4faa98;
+}
+
+.card p {
+  font-size: 1rem;
+  line-height: 1.4;
+}
+
+.flipCard {
+  background-color: transparent;
+  perspective: 1000px;
+  height: 230px;
+  width: 100%;
+  max-width: 300px;
+}
+
+.flipInner {
+  position: relative;
+  width: 100%;
+  height: 100%;
+  text-align: center;
+  transition: transform 0.8s;
+  transform-style: preserve-3d;
+}
+
+.flipCard:hover .flipInner {
+  transform: rotateY(180deg);
+}
+
+.flipFront,
+.flipBack {
+  position: absolute;
+  width: 100%;
+  height: 100%;
+  border-radius: 15px;
+  padding: 1.5rem;
+  box-sizing: border-box;
+  backface-visibility: hidden;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+}
+
+/* Fața păstrează designul tău inițial */
+.flipFront {
+  background-color: #1a1a1a;
+  box-shadow: 0 0 15px rgba(255,255,255,0.1);
+}
+
+.flipFront h2 {
+  font-size: 1.5rem;
+  margin-bottom: 0.8rem;
+  color: #4faa98;
+}
+
+.flipFront p {
+  font-size: 1rem;
+  line-height: 1.4;
+  color: #ccc;
+}
+
+/* Verso simplu */
+.flipBack {
+  background-color: #1a1a1a;
+  transform: rotateY(180deg);
+  box-shadow: 0 0 15px rgba(255,255,255,0.1);
+}
+
+.flipBack p {
+  font-size: 0.95rem;
+  color: #ddd;
+  margin-bottom: 1rem;
+}
+
+.moreButton {
+  display: inline-block;
+  padding: 0.6rem 1.2rem;
+  background-color: #4faa98;
+  color: black;
+  border-radius: 20px;
+  font-weight: 600;
+  text-decoration: none;
+  font-size: 0.9rem;
+  transition: background 0.3s ease, transform 0.2s ease;
+}
+
+.moreButton:hover {
+  background-color: #3aa187;
+  transform: translateY(-2px);
+}
+
+.slideUp {
+  animation: slideUp 0.8s ease forwards;
+}
+
+.slideDown {
+  animation: slideDown 0.8s ease forwards;
+}
+
+.grid > .flipCard:last-child {
+  grid-column: 1 / -1;
+  justify-self: center;
+}
+
+
+@keyframes slideUp {
+  from {
+    opacity: 0;
+    transform: translateY(30px);
+  }
+  to {
+    opacity: 1;
+    transform: translateY(0);
+  }
+}
+
+@keyframes slideDown {
+  from {
+    opacity: 0;
+    transform: translateY(-30px);
+  }
+  to {
+    opacity: 1;
+    transform: translateY(0);
+  }
+}
+
+/* Media queries pentru responsive design */
+@media (max-width: 768px) {
+  .projects {
+    padding: 2rem 1rem;
+  }
+  
+  .projects h1 {
+    font-size: 2rem;
+  }
+  
+  .grid {
+    grid-template-columns: 1fr;
+    gap: 1.5rem;
+  }
+  
+  .flipCard {
+    max-width: 100%;
+  }
+}
+
+@media (min-width: 769px) and (max-width: 1024px) {
+  .grid {
+    grid-template-columns: repeat(2, 1fr);
+  }
+}
+
+@media (min-width: 1025px) {
+  .grid {
+    grid-template-columns: repeat(4, 1fr);
+  }
+}

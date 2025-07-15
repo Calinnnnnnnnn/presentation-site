@@ -1,0 +1,30 @@
+.switch {
+  width: 50px;
+  height: 26px;
+  background-color: rgba(255,255,255,0.3);
+  border-radius: 20px;
+  position: relative;
+  cursor: pointer;
+  transition: background-color 0.3s ease;
+  margin-right: auto;
+}
+
+.switch.active {
+  background-color: #007aff; /* albastru Apple */
+}
+
+.thumb {
+  width: 22px;
+  height: 22px;
+  background-color: white;
+  border-radius: 50%;
+  position: absolute;
+  top: 2px;
+  left: 2px;
+  transition: left 0.3s ease;
+}
+
+/* Muta bulina la dreapta când e activ */
+.switch.active .thumb {
+  left: 26px;
+}

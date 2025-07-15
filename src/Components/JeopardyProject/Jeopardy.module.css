@@ -1,0 +1,169 @@
+.project {
+  background-color: black;
+  color: white;
+  padding: 4rem 2rem;
+  max-width: 1000px;
+  margin: 0 auto;
+  text-align: left;
+}
+
+.project h1 {
+  font-size: 2.5rem;
+  margin-bottom: 1rem;
+  color: #4faa98;
+  text-align: center;
+}
+
+.project h2 {
+  font-size: 1.8rem;
+  margin-top: 2rem;
+  color: #4faa98;
+}
+
+.project p {
+  font-size: 1.1rem;
+  line-height: 1.6;
+  margin-bottom: 1rem;
+}
+
+.project ul {
+  list-style: disc;
+  padding-left: 1.5rem;
+}
+
+.project li {
+  margin-bottom: 0.5rem;
+}
+
+.intro {
+  font-size: 1.2rem;
+  margin-bottom: 2rem;
+  text-align: center;
+}
+
+.section {
+  margin: 2rem 0;
+}
+
+.tech {
+  margin: 2rem 0;
+  padding: 1.5rem;
+  background: rgba(79, 170, 152, 0.1);
+  border-radius: 10px;
+  border-left: 4px solid #4faa98;
+}
+
+.backButton {
+  display: inline-block;
+  margin-top: 2rem;
+  padding: 0.6rem 1.2rem;
+  background-color: #4faa98;
+  color: black;
+  border-radius: 20px;
+  font-weight: 600;
+  text-decoration: none;
+  font-size: 0.95rem;
+  transition: background 0.3s ease, transform 0.2s ease;
+}
+
+.backButton:hover {
+  background-color: #3aa187;
+  transform: translateY(-2px);
+}
+
+.featuresLottie {
+  display: flex;
+  flex-wrap: wrap;
+  gap: 2rem;
+  margin: 2rem 0;
+  align-items: center;
+}
+
+.features {
+  flex: 1 1 300px;
+  min-width: 250px;
+}
+
+.lottieWrapper {
+  flex: 1 1 300px;
+  min-width: 200px;
+  max-width: 400px;
+  display: flex;
+  justify-content: center;
+}
+
+.lottie {
+  width: 100%;
+  max-width: 400px;
+}
+
+/* Animations */
+@keyframes slideInLeft {
+  from {
+    opacity: 0;
+    transform: translateX(-50px);
+  }
+  to {
+    opacity: 1;
+    transform: translateX(0);
+  }
+}
+
+@keyframes slideInTop {
+  from {
+    opacity: 0;
+    transform: translateY(-50px);
+  }
+  to {
+    opacity: 1;
+    transform: translateY(0);
+  }
+}
+
+.animateLeft {
+  animation: slideInLeft 0.8s ease forwards;
+}
+
+.animateTop {
+  animation: slideInTop 0.8s ease forwards;
+}
+
+/* Responsive */
+@media (max-width: 768px) {
+  .featuresLottie {
+    flex-direction: column;
+    align-items: stretch;
+  }
+
+  .lottieWrapper {
+    max-width: 100%;
+  }
+
+  .lottie {
+    max-width: 100%;
+  }
+
+  .project h1 {
+    font-size: 2rem;
+  }
+  .project h2 {
+    font-size: 1.4rem;
+  }
+  .project p,
+  .project li {
+    font-size: 1rem;
+  }
+}
+
+@media (max-width: 480px) {
+  .project h1 {
+    font-size: 1.8rem;
+  }
+  .project h2 {
+    font-size: 1.3rem;
+  }
+  .project p,
+  .project li {
+    font-size: 0.95rem;
+  }
+}

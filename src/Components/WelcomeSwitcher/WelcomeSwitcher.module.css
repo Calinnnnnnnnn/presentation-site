@@ -1,0 +1,316 @@
+.container {
+  height: 100vh;
+  background-color: black;
+  color: white;
+  display: flex;
+  align-items: flex-start; /* schimbat din center */
+  justify-content: center;
+  padding: 5rem 2rem 2rem; /* mai mult sus, mai puțin jos */
+}
+
+
+.content {
+  display: flex;
+  gap: 5rem;
+  max-width: 1200px;
+  width: 100%;
+  flex-wrap: wrap;
+  align-items: center;
+  justify-content: space-between;
+}
+
+.left {
+  flex: 1;
+  min-width: 280px;
+  padding-left: 2rem;
+  display: flex;
+  flex-direction: column;
+  align-items: flex-start;
+  justify-content: flex-end;
+}
+
+.right {
+  flex: 1;
+  min-width: 280px;
+  display: flex;
+  justify-content: center;
+}
+
+.message {
+  font-family: 'Great Vibes', serif;
+  font-size: 3.5rem;
+  font-weight: 700;
+  transition: opacity 0.5s ease, transform 0.5s ease;
+  padding-left: 0rem;
+  min-height: 5.5rem;
+}
+
+/* inițial */
+.slideFadeInStart {
+  opacity: 0;
+  transform: translateY(30px);
+  animation: slideFadeIn 1.5s ease-out forwards;
+}
+
+@keyframes slideFadeIn {
+  from {
+    opacity: 0;
+    transform: translateY(30px);
+  }
+  to {
+    opacity: 1;
+    transform: translateY(0);
+  }
+}
+
+/* pentru ciclul între mesaje */
+.fadeIn {
+  opacity: 1;
+  transform: translateY(0);
+}
+
+.fadeOut {
+  opacity: 0;
+  transform: translateY(0);
+}
+
+.scrollButton {
+  margin-top: 2rem;
+  background-color: white;
+  color: black;
+  font-weight: bold;
+  padding: 0.75rem 1.5rem;
+  border: none;
+  border-radius: 25px;
+  font-size: 1rem;
+  cursor: pointer;
+  transition: background 0.3s ease, transform 0.2s ease;
+  display: inline-flex;
+  align-items: center;
+  gap: 10px;
+  justify-content: center;
+}
+
+.scrollButton:hover {
+  background-color: #ddd;
+  transform: translateY(-2px);
+  box-shadow: 0 0 5px 2px #4faa98, 0 0 20px 4px #4faa98;
+
+}
+
+.arrow {
+  display: inline-block;
+  animation: pulseDown 1.5s infinite;
+  color: black;
+}
+
+.arrow svg {
+  width: 24px;
+  height: 24px;
+}
+
+@keyframes pulseDown {
+  0%, 100% {
+    transform: translateY(0);
+    opacity: 1;
+  }
+  50% {
+    transform: translateY(5px);
+    opacity: 0.6;
+  }
+}
+
+.card {
+  background-color: #1a1a1a;
+  color: white;
+  padding: 2rem;
+  border-radius: 20px;
+  box-shadow: 0 0 15px rgba(255, 255, 255, 0.15),
+              0 0 30px rgba(255, 255, 255, 0.1),
+              0 0 50px rgba(255, 255, 255, 0.05);
+  max-width: 400px;
+  text-align: center;
+  animation: slideInRight 1.2s ease-out forwards, cardGlowPulse 4s ease-in-out infinite;
+  opacity: 0; /* inițial invizibil */
+  transform: translateX(80px); /* pornește din dreapta */
+}
+
+
+@keyframes slideInRight {
+  from {
+    opacity: 0;
+    transform: translateX(80px);
+  }
+  to {
+    opacity: 1;
+    transform: translateX(0);
+  }
+}
+
+@keyframes slideInLeft {
+  from {
+    opacity: 0;
+    transform: translateX(-80px);
+  }
+  to {
+    opacity: 1;
+    transform: translateX(0);
+  }
+}
+
+
+
+.lottie {
+  margin-top: 2.5rem;
+  width: 220px;
+  height: 220px;
+  animation: lottieEnter 1.8s ease-out forwards;
+  opacity: 0;
+  transform: scale(0.9) translateY(20px);
+  display: block;
+  margin-left: auto;
+  margin-right: auto;
+}
+
+@keyframes lottieEnter {
+  to {
+    opacity: 1;
+    transform: scale(1) translateY(0);
+  }
+}
+
+
+
+
+
+.sliderAuto {
+  width: 100%;
+  max-width: 500px;
+  height: 300px;
+  overflow: hidden;
+  border-radius: 15px;
+  margin: 2rem 0;
+  position: relative; /* important pentru poziționarea absolută a imaginilor */
+  z-index: 1;
+  margin-top: auto;
+
+  animation: slideInLeft 1.2s ease-out forwards;
+  opacity: 0; /* inițial invizibil */
+  transform: translateX(-80px); /* pornește din stânga */
+}
+
+.sliderAuto::before {
+  content: '';
+  position: absolute;
+  top: 0;
+  left: 0;
+  width: 100%;
+  height: 100%;
+  background: radial-gradient(circle at center, rgba(255, 255, 255, 0.3) 0%, transparent 70%);
+  z-index: -1;
+  filter: blur(40px);
+  pointer-events: none;
+}
+
+.sliderAuto img {
+  position: absolute;
+  top: -1px;
+  left: -1px;
+  width: 100%;
+  height: 100%;
+  object-fit: cover;
+  object-position: center top;
+  opacity: 0;
+  transition: opacity 0.8s ease-in-out;
+  border-radius: 5px;
+  z-index: 1;
+}
+
+.sliderAuto img.active {
+  opacity: 1;
+}
+
+.sliderCaption {
+  margin-top: 0.5rem;
+  color: #ccc;
+  font-size: 1rem;
+  text-align: center;
+  font-style: italic;
+}
+
+.sliderAuto::before {
+  animation: glowPulse 4s infinite ease-in-out;
+}
+
+@keyframes glowPulse {
+  0%, 100% {
+    opacity: 0.25;
+  }
+  50% {
+    opacity: 0.4;
+  }
+}
+
+/* Ajustări responsive sub 992px (tablete) */
+@media (max-width: 992px) {
+  .message {
+    font-size: 2.5rem;
+    text-align: center;
+    width: 100%;
+  }
+  
+  .sliderAuto {
+    max-width: 100%;
+    height: 250px;
+  }
+  
+  .card {
+    max-width: 100%;
+    margin-top: 2rem;
+  }
+  
+  .lottie {
+    width: 180px;
+    height: 180px;
+  }
+}
+
+/* Ajustări responsive sub 768px (mobil) */
+@media (max-width: 768px) {
+  .container {
+    height: auto;
+    padding: 3rem 1rem;
+  }
+  
+  .content {
+    flex-direction: column;
+    gap: 2rem;
+    align-items: center;
+  }
+  
+  .left, .right {
+    padding: 0;
+    justify-content: center;
+    align-items: center;
+    width: 100%;
+  }
+
+  .message {
+    font-size: 2rem;
+    text-align: center;
+  }
+
+  .sliderAuto {
+    height: 200px;
+  }
+
+  .card {
+    text-align: center;
+    padding: 1.5rem;
+  }
+
+  .scrollButton {
+    width: 100%;
+  }
+}
+
