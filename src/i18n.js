@@ -14,7 +14,7 @@ i18n
     },
     backend: {
       // Aici definim de unde să ia fișierele JSON
-      loadPath: '/locales/{{lng}}/translation.json'
+      loadPath: `${process.env.PUBLIC_URL}/locales/{{lng}}/translation.json`
     }
   });
 
